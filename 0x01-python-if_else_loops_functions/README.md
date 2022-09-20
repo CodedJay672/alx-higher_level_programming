@@ -12,7 +12,9 @@ In python prograaming, just like many other programming languages, statements ar
 ***the IF statement*** allows us to write codes that follows a specific flow path based on if a condition is true or false.
 
 In python, the condional if statement has the following structure 
+
 '
-if condition: 
+if condition:
+
     block of code to run
 '
