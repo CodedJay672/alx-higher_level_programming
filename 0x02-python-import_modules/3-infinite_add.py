@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 import sys
 if __name__ == "__main__":
-    l = len(sys.argv)
+    str_len = len(sys.argv)
     j = 0
-    if l == 1:
+    if str_len == 1:
         print(j)
     else:
         for i in range(1, l):
