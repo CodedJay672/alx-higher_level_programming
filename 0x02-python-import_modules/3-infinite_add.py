@@ -6,6 +6,6 @@ if __name__ == "__main__":
     if str_len == 1:
         print(j)
     else:
-        for i in range(1, l):
+        for i in range(1, str_len):
             j += int(sys.argv[i])
         print("{:d}".format(j))
