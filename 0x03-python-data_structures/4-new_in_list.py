@@ -4,8 +4,8 @@ def new_in_list(my_list, idx, element):
         return my_list[:]
     if idx > len(my_list):
         return my_list[:]
-    list_cp = my_list[:]
-    for i in range(len(list_cp)):
+    new_list = my_list[:]
+    for i in range(len(new_list)):
         if i == idx:
-            list_cp[i] = element
-            return list_cp
+            new_list[i] = element
+            return new_list
