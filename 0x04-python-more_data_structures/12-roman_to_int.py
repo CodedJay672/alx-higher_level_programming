@@ -18,6 +18,7 @@ def roman_value(r):
         rom_to_int = 1000
     return rom_to_int
 
+
 def roman_to_int(roman_string):
     if roman_string is None or type(roman_string) is not str:
         return 0
