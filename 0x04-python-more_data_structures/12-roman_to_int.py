@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def roman_value(r):
-    roman_char = r.toupper()
+    roman_char = r.upper()
     rom_to_int = 0
     if roman_char == 'I':
         rom_to_int = 1
@@ -21,5 +21,12 @@ def roman_value(r):
 def roman_to_int(roman_string):
     if roman_string is None or type(roman_string) is not str:
         return 0
-    roman_char = roman_string.split()
+    s1, s2 = 0, 0
 
+    for i in roman_string:
+        s2 = roman_value(i)
+        if s2 > s1:
+            s1 = s2 - s1
+        else:
+            s1 += s2
+    return s1
