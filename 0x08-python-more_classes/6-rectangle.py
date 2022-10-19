@@ -14,6 +14,7 @@ class Rectangle:
     """
 
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """constructor to initialize width and height"""
         if not isinstance(width, int):
