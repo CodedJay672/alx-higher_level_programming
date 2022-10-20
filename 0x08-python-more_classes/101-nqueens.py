@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 """ solves the n-queens puzzle problem """
 import sys
 
