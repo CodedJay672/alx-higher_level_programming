@@ -30,10 +30,16 @@ that value is equivalent to using the ''+'' operator.
    >>> add_integer(2, 3)
    5
   
-   Test 3
+   Test 2
    >>> add_integer(2, -3)
    -1
 
-   Test 4
+   Test 3
    >>> add_integer(2)
    100
+
+   Test 4
+   >>> add_integer()
+   Traceback (most recent call last):
+       ...
+   TypeError: add_integer() missing 1 required positional argument: 'a'
