@@ -6,6 +6,7 @@ prints "My name is <first_name> <last_name>"
 
 """
 
+
 def say_my_name(first_name, last_name=""):
     """
     accepts two strings <first_name> and <last_name>
