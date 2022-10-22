@@ -1,0 +1,48 @@
+TEST FILE FOR print_square()
+============================
+
+'print_square()' prints square on the stdout
+@size: integer value for square size
+
+import module
+-------------
+    >>> print_square = __import__('4-print_square').print_square
+
+import module documentation
+---------------------------
+    >>> mod_doc = __import__('4-print_square').__doc__
+
+import function documentation
+-----------------------------
+    >>> func_doc = __import__('4-print_square').print_square.__doc__
+
+    Test 1
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+    Test 2
+    >>> print_square()
+    Traceback (most recent call last):
+        ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
+
+    Test 3
+    >>> print_square('a')
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+    Test 4
+    >>> print_square(-4)
+    Traceback (most recent call last):
+        ...
+    ValueError: size must be >= 0
+
+    Test 5
+    >>> print_square(-4.2)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
