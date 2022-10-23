@@ -23,4 +23,8 @@ def text_indentation(text):
         if (text[count] == "." or text[count] == "?" or text[count] == ":"):
             print("\n")
             count += 1
+            if (text[count] == " "):
+                pass
+            else:
+                count -= 1
         count += 1
