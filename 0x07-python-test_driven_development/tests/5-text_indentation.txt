@@ -1,0 +1,37 @@
+================================
+TEST FILE FOR text_indentation()
+================================
+
+'text_indentation()' prints a newine character after ., ? and :
+function accepts a long string of many characters as an argument
+
+import module
+-------------
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+import module documentation
+---------------------------
+    >>> mod_doc = __import__('5-text_indentation').__doc__
+
+import function documentation
+-----------------------------
+    >>> func_doc = __import__('5-text_indentation').text_indentation.__doc__
+
+    Test 1
+    >>> text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo?"
+    >>> text_indentation(text)
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <BLANKLINE>
+    Quonam modo?
+    <BLANKLINE>
+
+    Test 2
+    >>> text = ""
+    >>> text_indentation(text)
+
+    Test 3
+    >>> text = 4
+    >>> text_indentation(text)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
