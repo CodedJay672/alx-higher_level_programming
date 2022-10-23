@@ -6,6 +6,7 @@ argument is a text containing many characters
 
 """
 
+
 def text_indentation(text):
     """
     prints 2 lines after ., ? and :
