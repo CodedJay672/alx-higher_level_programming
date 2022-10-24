@@ -24,3 +24,12 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_emptyList(self):
         self.assertIsNone(max_integer([]), None)
+
+    def test_maxMiddle(self):
+        self.assertEqual(max_integer([0, 1, 4, 3, 2]), 4)
+
+    def test_negNumbers(self):
+        self.assertEqual(max_integer([-1, -2, -4, -5]), -1)
+
+    def test_oneNeg(self):
+        self.assertEqual(max_integer([1, 2, -3, 4, 5]), 5)
