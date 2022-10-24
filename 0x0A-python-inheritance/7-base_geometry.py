@@ -15,8 +15,8 @@ class BaseGeometry(object):
         """function that validates  value"""
 
         if type(name) is not str:
-            raise TypeError("name must be a string")
+            raise TypeError("{} must be a string".format(name))
         if type(value) is not int:
-            raise TypeError("<name> must be an integer")
+            raise TypeError("{} must be an integer".format(name))
         if value <= 0:
-            raise ValueError("<name> must be greater than 0")
+            raise ValueError("{} must be greater than 0".format(name))
