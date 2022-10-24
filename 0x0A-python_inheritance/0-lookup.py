@@ -1,4 +1,4 @@
-#!.usr/bin/python3
+#!/usr/bin/python3
 
 """
 module that prints a list of available of 
