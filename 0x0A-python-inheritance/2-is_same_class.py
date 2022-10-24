@@ -2,6 +2,7 @@
 
 """ Module to check the instance of a specified class"""
 
+
 def is_same_class(obj, a_class):
     """function which accepts two arguements a and b
     checks if a is an instance of b
