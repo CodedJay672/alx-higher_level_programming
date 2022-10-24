@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
 """
-module that prints a list of available of 
+module that prints a list of available of
 attributes and methods of an object
 
 """
+
 
 def lookup(obj):
     """
