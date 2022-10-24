@@ -13,9 +13,6 @@ class MyList(list):
     the list sorted in ascending order
 
     """
-
-    
-
     def print_sorted(self):
         """
         prints the list sorted in ascending order
