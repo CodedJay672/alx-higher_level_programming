@@ -20,10 +20,9 @@ class Student(object):
 
         my_dict = dict()
 
-
         if type(attrs) is list and all(type(x) is str for x in attrs):
             for x in attrs:
-                 if x in self.__dict__:
-                     my_dict.update({x: self.__dict__[x]})
-            return my_dict
-        return self.__dict__.copy()
+                if x in self.__dict__:
+                    my_dict.update({x: self.__dict__[x]})
+                return my_dict
+            return self.__dict__.copy()
