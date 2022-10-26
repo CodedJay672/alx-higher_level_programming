@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Class to json module"""
 
+
 def class_to_json(obj):
     """function which converts python object to json dict
     Args:
