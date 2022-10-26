@@ -8,6 +8,6 @@ def write_file(filename="", text=""):
         @filename: name of the file
         @text: string to append to the file
     """
-    
+
     with open(filename, 'w', encoding="utf-8") as f:
         return f.write(text)

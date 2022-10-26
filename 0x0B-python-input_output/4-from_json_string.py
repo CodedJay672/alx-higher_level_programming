@@ -4,7 +4,7 @@ import json
 
 
 def from_json_string(my_str):
-    """function that converts json string to python 
+    """function that converts json string to python
     data structure.
     Args:
         @my_str: json string to convert
