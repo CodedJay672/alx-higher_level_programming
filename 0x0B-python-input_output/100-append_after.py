@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """search and replace module"""
 
+
 def append_after(filename="", search_string="", new_string=""):
     """searches for a string in a file
     replaces the search string with new string
