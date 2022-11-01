@@ -113,7 +113,6 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """update function"""
         a = 0
-        
 
         if args:
             for arg in args:
