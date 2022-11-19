@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """locked class module"""
 
-class LockedClass:
+
+class LockedClass(object):
     """prevents dynamic cretion of new instances"""
 
-    ___slots__ = ["first_name"]
+    __slots__ = ["first_name"]
