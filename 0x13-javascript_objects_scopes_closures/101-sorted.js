@@ -9,9 +9,8 @@ const newDict = {};
 for (const j in uniqVals) {
   const list = [];
   for (const k in dictEntries) {
-    if (dictEntries[k][1] === uniqVals) list.unshift(dictEntries[k][0]);
+    if (dictEntries[k][1] === uniqVals[j]) list.unshift(dictEntries[k][0]);
   }
   newDict[uniqVals[j]] = list;
 }
 console.log(newDict);
-
