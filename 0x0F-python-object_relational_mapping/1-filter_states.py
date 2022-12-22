@@ -20,7 +20,9 @@ if __name__ == "__main__":
             db=args[3]
             )
     cur = conn.cursor()
-    cur.execute("SELECT id, name FROM states WHERE name LIKE 'N%'ORDER BY states.id ASC")
+    cur.execute("SELECT id, name FROM states \
+            WHERE name LIKE 'N%' \
+            ORDER BY states.id ASC")
     rows = cur.fetchall()
     for row in rows:
         print("(%s, '%s')" % (row[0], row[1]))
