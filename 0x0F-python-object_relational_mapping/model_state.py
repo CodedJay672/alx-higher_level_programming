@@ -7,10 +7,11 @@
 
 """
 
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 
-Base = declarative_base()
+myMetaData = MetaData()
+Base = declarative_base(myMetaData)
 
 
 class State(Base):
@@ -23,5 +24,5 @@ class State(Base):
     """
 
     __tablename__ = 'states'
-    id = Column(Integer(11), unique=True, nullable=False, primary_key=True)
+    id = Column(Integer, unique=True, nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
