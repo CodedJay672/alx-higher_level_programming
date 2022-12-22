@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Script that lists all states from a database"""
+
+""" Python script that lists all states from a database using MySQLdb """
 
 import sys
 import MySQLdb
