@@ -18,7 +18,9 @@ if __name__ == "__main__":
                            db=args[3])
     cur = conn.cursor()
 
-    cur.execute(("SELECT c.name FROM cities AS c WHERE c.state_id = (SELECT states.id FROM states WHERE states.name = '{}');".format(args[4])))
+    cur.execute(("SELECT c.name FROM cities AS c \
+                 WHERE c.state_id = (SELECT states.id FROM states \
+                 WHERE states.name = '{}');".format(args[4])))
     rows = cur.fetchall()
 
     print(', '.join(row[0] for row in rows))
