@@ -12,7 +12,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 
 myMetaData = MetaData()
-Base = declarative_base(myMetaData)
+Base = declarative_base(metadata=myMetaData)
 
 
 class State(Base):
@@ -27,4 +27,5 @@ class State(Base):
     __tablename__ = 'states'
     id = Column(Integer, unique=True, nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
-    cities = relationship("City", back_populates="states")
+    cities = relationship("City", back_populates='state',
+                          cascade="all, delete, delete-orphan")
