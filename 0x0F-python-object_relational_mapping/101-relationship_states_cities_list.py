@@ -22,10 +22,10 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=Engine)
     session = Session()
 
-    tup_st = session.query(State).outerjoin(
-            City).order_by(State.id, City.id).all()
+    tup_st = session.query(State).outerjoin(City).order_by(State.id,
+                                                           City.id).all()
 
-    for state in tup_st:
-        print("{}: {}".format(state.id, state.name))
-        for city in state.cities:
-            print("\t{}: {}".format(city.id, city.name))
+    for states in tup_st:
+        print("{}: {}".format(states.id, states.name))
+        for cities in states.cities:
+            print("\t{}: {}".format(cities.id, cities.name))
