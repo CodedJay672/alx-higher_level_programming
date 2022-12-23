@@ -24,3 +24,5 @@ if __name__ == "__main__":
     rows = session.query(State).order_by(State.id).first()
     if rows:
         print('{}: {}'.format(rows.id, rows.name))
+    else:
+        print('Nothing')
