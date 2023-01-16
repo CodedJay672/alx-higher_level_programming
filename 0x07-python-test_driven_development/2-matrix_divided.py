@@ -11,19 +11,19 @@ def matrix_divided(matrix, div):
     """
 
     if (not isinstance(div, int) and not isinstance(div, float)):
-        return TypeError("div must be a number")
+        raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
     if not isinstance(matrix, list):
-        raise TypeError("matrix must be a matrix \
-                        (list of lists) of integers/floats")
+        raise TypeError("matrix must be a matrix" +
+                        " (list of lists) of integers/floats")
 
     size = len(matrix[0])
 
     for mat_list in matrix:
         if not isinstance(mat_list, list):
-            raise TypeError("matrix must be a matrix \
-                            (list of lists) of integers/floats")
+            raise TypeError("matrix must be a matrix" +
+                            " (list of lists) of integers/floats")
         if len(mat_list) != size:
             raise TypeError("Each row of the matrix must have the same size")
         for list_element in mat_list:

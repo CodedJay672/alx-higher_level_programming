@@ -43,3 +43,7 @@ import function doc
     Traceback (most recent call last):
         ...
     TypeError: last_name must be a string
+
+    Test 5
+    >>> say_my_name('cindy')
+    My name is cindy 
