@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-python script that sends a request and displays the content of 
+python script that sends a request and displays the content of
 a variable.
 script should take a web address via the sys library
 
