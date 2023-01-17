@@ -7,5 +7,4 @@ import sys
 if __name__ == "__main__":
     page = urllib.request.Request(sys.argv[1])
     with urllib.request.urlopen(page) as e:
-        page = e.read()
-        print(dict(page.headers).get("X-Request-Id"))
+        print(dict(e.headers).get("X-Request-Id"))
