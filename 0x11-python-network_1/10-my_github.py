@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-"""Python script that prints a github user ID
-script takes a username and password as arguments"""
+"""
+Python script that prints a github user ID
+script takes a username and password as arguments
+
+"""
 
 import sys
 import requests
