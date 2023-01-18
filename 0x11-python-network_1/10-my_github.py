@@ -9,4 +9,4 @@ from from requests.auth import HTTPBasicAuth
 if __name__ == "__main__":
     login = HTTPBasicAuth(sys.argv[1], sys.argv[2])
     page = requests.get("https://api.github.com/user", auth=login)
-    print(r.json().get("id"))
+    print(page.json().get("id"))
