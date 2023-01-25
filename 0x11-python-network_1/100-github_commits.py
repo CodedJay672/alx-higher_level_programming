@@ -18,4 +18,4 @@ if __name__ == "__main__":
             print("{}: {}".format(commit[i].get("sha"),
                   commit[i].get("commit").get("author").get("name")))
     except IndexError:
-        print("Index Error")
+        pass
